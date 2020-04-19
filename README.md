@@ -26,4 +26,13 @@ TABLE I: 10-TIME-10-FOLD CROSS VALIDATION ACCURACY & TRAINING TIME RESULTS
 |   C4.5+LDA   |   97.37  | 0.5224 |   0.05903  | 0.01709 |
 | C4.5+LDA+PCA |   96.97  | 0.6055 |    3.062   |  0.3752 |
 
+The varying results of accuracy and training time are visualized using bar graphs as shown in Figure 1 and Figure 2.   
+![](Figures/accuracy_bar.png)*Figure 1. Bar graph of the results of feature extraction techniques on accuracy.*  
+![](Figures/train_bar.png)*Figure 2. Bar graph of the results of feature extraction techniques on training time.*  
+
+From the results of the cross-validation, using LDA in the preprocessing step of the C4.5 classifying tree was determined to be the best setup studied in this analysis. The C4.5 decision tree accuracy for classifying was improved by 4.1% while decreasing the computational complexity to train the model by 99% for the HAR dataset. The precision of the model is improved using LDA by 40% as shown by the lower standard deviation in the accuracy results. 
+
+Using LDA for feature reduction alongside the C4.5 algorithm, the final accuracy of the training and testing data from the UCI Machine Learning Repository was determined. The training and testing data from the repository are approximately a 70/30 split, respectively. The test accuracy of the best model setup determined by this study was 95.62% with the confusion matrix shown in  Figure 3.
+
+![](Figures/con_mat_lda.png)*Figure 3. Confusion matrix for the test accuracy of 95.62%.*
 
